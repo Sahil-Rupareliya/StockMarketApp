@@ -21,7 +21,7 @@ public class OpenAPIConfig {
                         .license(
                                 new License()
                                         .name("Source Code")
-                                        .url("https://github.com/kevinchangani96/Stock_Wise_Web_Application")
+                                        .url("https://github.com/Sahil-Rupareliya/StcokMarketApp")
                         )
         );
     }
