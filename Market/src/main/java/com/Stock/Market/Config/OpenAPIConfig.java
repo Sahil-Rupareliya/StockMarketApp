@@ -1,4 +1,4 @@
-package com.example.StockWise.config;
+package com.Stock.Market.Config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;

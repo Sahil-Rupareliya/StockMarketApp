@@ -35,6 +35,11 @@ public class UserController {
         return userService.addFund(email,amount);
     }
 
+    @GetMapping("/GetFund")
+    private String getFund(@RequestParam String email){
+        return userService.getFund(email);
+    }
+
     @PostMapping("/resetPassword")
     private String resetPassword(@RequestParam String email){
         return userService.resetPassword(email);
@@ -43,7 +48,6 @@ public class UserController {
     @PostMapping("/verifyOTP")
     private String verifyOTP(@RequestBody ResetDTO user) throws NoSuchAlgorithmException{
         return userService.verifyOTP(user);
-
     }
 
 }

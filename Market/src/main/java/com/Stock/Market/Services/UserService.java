@@ -94,4 +94,13 @@ public class UserService {
         }
 
     }
+
+    public String getFund(String email) {
+        User user =  userRepo.findByUserEmail(email);
+        if(user.getStatus().equals("Logged in")){
+            return Double.toString(user.getFund());
+        }else{
+            return "LogIn Required";
+        }
+    }
 }
