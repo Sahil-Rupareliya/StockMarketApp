@@ -21,7 +21,7 @@ public class UserController {
     }
 
     @GetMapping("/login")
-    private String loginUser(@RequestParam String email, String Password) throws NoSuchAlgorithmException{
+    private String loginUser(@RequestParam String email, @RequestParam String Password) throws NoSuchAlgorithmException{
         return userService.userLogin(email, Password);
     }
 
